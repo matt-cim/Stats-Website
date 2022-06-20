@@ -1,2 +1,3 @@
 # Stats-Website
-Foo
+make requirments folder for flask
+
