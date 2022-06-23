@@ -1,13 +1,3 @@
-<!-- side notes
-    1. need to install "live server" extension by Ritwick Dey which creates
-    a local server when you click "go live" in the bottom pannel of VS code 
-
-    2. saving on VScode updates the web page
-
-    3. using Jinja in pages.py?
--->
-
-
 <!-- started by auto formatted."!"->"enter"... provides basic HTML template for all projects -->
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +13,7 @@
         .center {
             text-align-last: center;
             border: 2px solid black;
+            margin-bottom: 80px;
         }
     </style>
 
@@ -60,16 +51,26 @@
         </div>
     
 
-    <form action="/pages/child/">
-        <button class = "button link_button">Second Page</button>
-    </form>
+    <body>
+        <img src=https://media2.giphy.com/media/DS89v1NqpzCqA/200w.webp?cid=ecf05e47gnw0q1heij2ymxtc5hymfo2rekzowv2g38iklcqv&rid=200w.webp&ct=g"
+            width="425" 
+            height="450" 
+            style="float:left">
+     </body>
+     <body>
+        <img src="https://media2.giphy.com/media/DS89v1NqpzCqA/200w.webp?cid=ecf05e47gnw0q1heij2ymxtc5hymfo2rekzowv2g38iklcqv&rid=200w.webp&ct=g"
+            width="425" 
+            height="450" 
+            style="float:right">
+     </body>
 
 
-    <h3 style = "text-align:left">
+    <h3 style = "text-align: center">
         Enter data set
     </h3>
         <!-- outputs all the stats after button is clicked -->
-    <form action="/pages/statistics/" method = "POST">
+    <form style="text-align: center; "
+            action="/pages/statistics/" method = "POST">
         <div class = "calculatorInputs">
             <div class = "calculatorInputgroup">
                 <label for = "input"></label>
@@ -81,18 +82,19 @@
             </div>
         </div>
         <button type="submit">Calculate Stats!</button>
-        <p>Mean: <strong>{{mean}}</strong></p>
+        <p>Standard Deviation: <strong>{{stdev}}</strong></p>
+        <p>Variance: <strong>{{variance}}</strong></p>
         <p>Median: <strong>{{median}}</strong></p>
-        <p>Sum: <strong>{{sum}}</strong></p>
         <p>Mode: <strong>{{mode}}</strong></p>
     </form>
 
     
-    <h3 style = "text-align:left">
+    <h3 style = "text-align: center">
         Enter two data sets
     </h3>
         <!-- outputs stats of two data sets -->
-    <form action="/pages/twosets/" method = "POST">
+    <form style="text-align: center; "
+        action="/pages/twosets/" method = "POST">
         <div class = "calculatorInputs">
             <div class = "calculatorInputgroup">
                 <label for = "input1"></label>
@@ -115,19 +117,18 @@
         </div>
         <button type="submit">Calculate Stats!</button>
         <p>Covariance: <strong>{{covariance}}</strong></p>
+        <p>Correlation Coefficient: <strong>{{correlation}}</strong></p>
     </form>
 
 
-    <!-- mean computation
-    <form action="/pages/mean/" method = "POST">
-        <label for="first">First Number: </label>
-        <input type="number" id="first" name="first" placeholder="ex.10">
-        <label for="second">Second Number: </label>
-        <input type="number" id="second" name="second" placeholder="ex.69">
-        <label for="third">Third Number: </label>
-        <input type="number" id="third" name="third" placeholder="ex.420">
-        <button type="submit">Compute Mean</button>
-    </form> -->
+    <div class = "center">
+        <p>
+            <font color = "blue">
+                https://github.com/matt-cim
+            </font>
+        </p>
+    </div>
+
 
     <!-- runs javascript -->
     <script

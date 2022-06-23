@@ -6,5 +6,5 @@ app = Flask(__name__)
 app.register_blueprint(pages, url_prefix = "/")
 
 
-#used to start the website
+# used to start the website
 if __name__ == "__main__": app.run(debug = True, port = 5000)
