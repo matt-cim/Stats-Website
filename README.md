@@ -4,3 +4,5 @@ This website utilizes **Flask**, a lightweight Python web framework that provide
 ![](stats_website.gif)
 
 ## Functionality examples
+![](examples/e1.gif)  ![](examples/e2.gif)
+![](examples/e3.gif)  ![](examples/e4.gif)
